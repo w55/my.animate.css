@@ -1,0 +1,344 @@
+/*-----------------------------------*\
+  $RESET
+\*-----------------------------------*/
+
+*, :before, :after {
+  margin: 0;
+  padding: 0;  
+  position: relative;
+  
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input, select, button, textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  /*        appearance: none; */
+
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+}
+
+/*-----------------------------------*\
+  $OBJECTS
+\*-----------------------------------*/
+
+.butt, .input {
+  padding: 5px 10px;
+  margin: 10px 8px;
+
+  background-color: transparent;
+  border-radius: 4px;
+}
+
+  .butt:focus, .input:focus {
+    outline: none;
+  }
+  
+  .label {
+	 font-size: 1.3rem;
+  font-weight: 400;
+  color: #f35626;
+  
+	-webkit-animation: hue 40s infinite linear;
+	-moz-animation: hue 40s infinite linear;
+	-o-animation: hue 40s infinite linear;
+	animation: hue 40s infinite linear;
+}
+
+.butt {
+  border: 1px solid #f35626;
+  line-height: 1.375;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  font-size: 1.1rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+
+  color: #f35626;
+  text-decoration: none;
+
+  cursor: pointer;
+
+	-webkit-animation: hue 60s infinite linear;
+	-moz-animation: hue 60s infinite linear;
+	-o-animation: hue 60s infinite linear;
+	animation: hue 60s infinite linear;  
+}
+
+  .butt--primary {
+    background-color: #f35626;
+    color: #fff;
+  }
+
+.input {
+  border: 1px solid #c0c8c9;
+  border-radius: 4px;
+  
+  padding-left: 10px;/* for IE + Yandex.Browser - correct output */  
+  padding-top: 4px; /* for IE + Yandex.Browser - correct output */  
+  height: 34px; /* for IE + Yandex.Browser - correct output */    
+}
+
+  .input--dropdown {
+    background-image: url("../images/ddown.svg"), none;
+    background-repeat: no-repeat;
+    background-size: 24px 16px;
+    background-position: right center;
+  }
+  
+  option {
+	padding-left: 8px;	  
+	padding-right: 8px;
+  }
+  
+/* button and dropdown hover effects */  
+  .butt:hover, .input--dropdown:hover {
+	  border: 1px solid #f99;
+	  box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 2px 8px rgba(0,0,0,0.24);
+  }  
+    .butt:active {
+	  border: 1px solid #000;
+	  box-shadow: 0 2px 6px rgba(0,0,0,0.48), 0 2px 8px rgba(0,0,0,0.64);
+  }    
+
+/*-----------------------------------*\
+  $TYPOGRAPHY
+\*-----------------------------------*/
+
+h1, .alpha {
+  margin-bottom: 1.5rem;
+
+  /* font-size: 3rem; */
+  font-size: 2.4rem;
+  font-weight: 100;
+  line-height: 1;
+  letter-spacing: -.05em;
+}
+
+h2, .beta {
+  margin-bottom: .75rem;
+
+  font-weight: 400;
+  /* font-size: 1.5rem; */
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+@media (min-width: 650px) {
+  .mega {
+    /* font-size: 6rem; */
+    font-size: 5rem;
+    line-height: 1;
+  }
+}
+
+.subhead, .meta {
+  color: #7b8993;
+}
+
+.promo {
+  text-align: center;
+}
+
+p, hr, form {
+  margin-bottom: 1.5rem;
+}
+
+hr {
+  border: none;
+  margin-top: -1px;
+  height: 1px;
+  background-color: #c0c8c9;
+  
+  background-image: -webkit-linear-gradient(0deg, #fff, #c0c8c9, #fff);
+  background-image: -moz-linear-gradient(0deg, #fff, #c0c8c9, #fff);
+  background-image: -o-linear-gradient(0deg, #fff, #c0c8c9, #fff);
+  background-image: linear-gradient(0deg, #fff, #c0c8c9, #fff);
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  
+	-webkit-animation: hue 60s infinite linear;
+	-moz-animation: hue 60s infinite linear;
+	-o-animation: hue 60s infinite linear;
+	animation: hue 60s infinite linear;
+}
+
+  a:hover {
+    color: #f35626;
+  }
+
+/*-----------------------------------*\
+  $LAYOUT
+\*-----------------------------------*/
+
+.wrap {
+  /* max-width: 38rem; */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.island {
+  padding: 1.5rem;
+}
+
+.isle {
+  padding: .75rem;
+}
+
+.spit {
+  padding: .375rem;
+}
+
+#animationSandbox {
+	display: block;
+}
+/*-----------------------------------*\
+  $BASE
+\*-----------------------------------*/
+
+html {
+  /* font: 100%/1.5 "Roboto", Verdana, sans-serif; */
+  font: 100%/1.8 "Roboto", Verdana, sans-serif;
+  color: #3d464d;
+  background-color: #fff;
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  /* font-smoothing: antialiased; */
+  
+  width: 100%;
+
+  /* overflow: hidden-x; */
+
+  /* Centering in The Unknown */
+  text-align: center;
+	/*  Страница без полос прокрутки */
+	overflow:  hidden;  
+}
+
+@media (min-width: 650px) {
+  html {
+    height: 100%;
+	/*  Страница без полос прокрутки */
+	overflow:  hidden;
+  }
+
+  html:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;
+  }
+
+  body {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 1200px;
+	/*
+	border: 1px solid #aaa;
+    padding:100px;
+	background-color: white;
+    background-clip: padding-box;
+	*/
+  }
+}
+
+/*-----------------------------------*\
+  $HEADER
+\*-----------------------------------*/
+
+.site__header {  
+	-webkit-animation: bounceInDown 1s;
+	-moz-animation: bounceInDown 1s;
+	-o-animation: bounceInDown 1s;
+	animation: bounceInDown 1s;
+}
+
+  .site__title {
+	 /*
+    color: #feab3a;
+    background-image: -webkit-linear-gradient(132deg, #feab3a, #f35626);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	*/
+	-webkit-animation: jello 2.0s;
+	-moz-animation: jello 2.0s;
+	-o-animation: jello 2.0s;
+	animation: jello 2.0s;
+  }
+
+.site__content {
+  -webkit-animation: bounceInLeft 1.5s;
+  -moz-animation: bounceInLeft 1.5s;
+  -o-animation: bounceInLeft 1.5s;
+  animation: bounceInLeft 1.5s;
+  
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -o-animation-delay: .1s;
+  animation-delay: .1s;
+}
+
+  .site__content form {	
+    -webkit-animation: jello 2.5s;
+    -moz-animation: jello 2.5s;
+    -o-animation: jello 2.5s;
+    animation: jello 2.5s;
+    
+	-webkit-animation-delay: .1s;
+	-moz-animation-delay: .1s;
+	-o-animation-delay: .1s;
+	animation-delay: .1s;	
+  }
+
+
+/*-----------------------------------*\
+  $ANIMATIONS
+\*-----------------------------------*/
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+@-moz-keyframes hue {
+  from {
+    -moz-filter: hue-rotate(0deg);
+  }
+  to {
+    -moz-filter: hue-rotate(-360deg);
+  }
+}
+@-o-keyframes hue {
+  from {
+    -o-filter: hue-rotate(0deg);
+  }
+  to {
+    -o-filter: hue-rotate(-360deg);
+  }
+}
+
+@keyframes hue {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(-360deg);
+  }
+}
