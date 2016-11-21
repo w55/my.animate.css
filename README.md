@@ -3,7 +3,6 @@
 
 Take a look: <a href="http://w55.webutu.com/my.animate.css/my.animate.html">DEMO PAGE</a>.
 
-
 <hr>
 <img width="600" src="Screenshots/screenshot-1.jpg" alt="screenshot-1" />
 <hr>
